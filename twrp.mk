@@ -35,6 +35,7 @@ TW_CRYPTO_REAL_BLKDEV := "/dev/block/bootdevice/by-name/userdata"
 TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,barrier=1,noauto_da_alloc,discard"
 TW_CRYPTO_FS_FLAGS := "0x00000406"
 TW_CRYPTO_KEY_LOC := "footer"
+
 # TWRP flags
 TW_THEME := portrait_hdpi
 TW_HAS_NO_RECOVERY_PARTITION := true
@@ -43,4 +44,4 @@ TW_NO_USB_STORAGE := true
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    device/sony/shinano-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/sony/shinano/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
