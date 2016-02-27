@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_d6503-userdebug
+add_lunch_combo omni_sirius-userdebug

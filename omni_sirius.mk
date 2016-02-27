@@ -12,5 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_sirius.mk
+# Inherit AOSP Shinano common device parts
+$(call inherit-product, device/sony/sirius/aosp_d6503.mk)
 
+# Inherit Omni GSM telephony parts
+$(call inherit-product, device/sony/common/radio.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit Omni product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+
+# Override Product Name for OmniROM
+PRODUCT_NAME := omni_sirius
+PRODUCT_MODEL := Xperia Z2
+
+TARGET_OTA_ASSERT_DEVICE := sirius,D6503
