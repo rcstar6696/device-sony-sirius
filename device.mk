@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES := \
     device/sony/sirius/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     device/sony/sirius/rootdir/system/etc/BCM4339.hcd:system/etc/firmware/BCM43xx.hcd \
     device/sony/sirius/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-    device/sony/sirius/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
+    device/sony/sirius/rootdir/system/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     device/sony/sirius/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/sirius/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/sony/sirius/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
@@ -81,6 +81,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.sirius
 
+# Telephony Packages (AOSP)
+PRODUCT_PACKAGES += \
+    InCallUI \
+    Stk
+
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -91,7 +96,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/shinano-common/platform_omni.mk)
-$(call inherit-product, vendor/sony/sirius/sirius-vendor.mk)
+$(call inherit-product, vendor/sony/shinano-sirius/sirius-vendor.mk)
 
 # Inherit TWRP requirements
 $(call inherit-product, device/sony/sirius/twrp.mk)
+
