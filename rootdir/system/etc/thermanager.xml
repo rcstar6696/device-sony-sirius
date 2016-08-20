@@ -77,7 +77,7 @@
 
 	<control name="battery_protect">
 		<mitigation level="off"><value resource="charging_enabled">1</value></mitigation>
-		<mitigation level="1"><value resource="charging_enabled">0</value></mitigation>
+		<mitigation level="1"><value resource="charging_enabled">1</value></mitigation>
 		<mitigation level="2"><value resource="shutdown" /></mitigation>
 	</control>
 
