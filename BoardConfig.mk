@@ -28,3 +28,4 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=sirius
 PRODUCT_VENDOR_KERNEL_HEADERS += $(DEVICE_PATH)/kernel-headers
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/max1187x/wakeup_gesture"
+BOARD_HARDWARE_CLASS += device/sony/sirius/cmhw
