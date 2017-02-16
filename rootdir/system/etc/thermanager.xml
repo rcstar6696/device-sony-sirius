@@ -183,7 +183,7 @@
 		<threshold>
 			<mitigation name="battery_protect" level="off" />
 		</threshold>
-		<threshold trigger="45000" clear="40000">
+		<threshold trigger="62000" clear="57000">
 			<mitigation name="battery_protect" level="1" />
 		</threshold>
 		<threshold trigger="70000" clear="65000">
