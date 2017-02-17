@@ -2193,7 +2193,7 @@
         <!-- 67 % of 124 (range 0 - 124) Register: 0x231 -->
         <ctl name="DEC3 Volume" value="83" />
         <!-- 63 % of 19 (range 0 - 19) Register: 0x15F -->
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="9" />
     </path>
 
     <path name="handset-mic-asr">
@@ -2201,7 +2201,7 @@
         <!-- 66 % of 124 (range 0 - 124) Register: 0x231 -->
         <ctl name="DEC3 Volume" value="82" />
         <!-- 63 % of 19 (range 0 - 19) Register: 0x15F -->
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC4 Volume" value="9" />
     </path>
 
     <path name="handset-secondary-mic">
